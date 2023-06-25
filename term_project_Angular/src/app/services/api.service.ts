@@ -20,7 +20,6 @@ export class ApiService {
   }
 
   deleteRequestInfoForm(requestId: string): Observable<any> {
-    console.log(this.http.delete(`${this.serverUrl}/${requestId}`))
     return this.http.delete(`${this.serverUrl}/${requestId}`);
   }
 
