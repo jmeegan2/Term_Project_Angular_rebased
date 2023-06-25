@@ -1,0 +1,43 @@
+
+<form (ngSubmit)="submitForm()" [formGroup]="requestForm" action="https://formsubmit.co/jmeegan8@email.com" method="POST" novalidate>
+    <h3>Request Info</h3>
+  <div class="form-group">
+    <input type="text" id="firstName" placeholder="First Name" formControlName="firstName" class="form-control">
+    <div *ngIf="requestForm?.get('firstName')?.invalid && requestForm?.get('firstName')?.touched" class="text-danger">First name is required.</div>
+  </div>
+
+  <div class="form-group">
+    <input type="text" id="lastName" placeholder="Last Name" formControlName="lastName" class="form-control">
+    <div *ngIf="requestForm?.get('lastName')?.invalid && requestForm?.get('lastName')?.touched" class="text-danger">Last name is required.</div>
+  </div>
+
+  <div class="form-group">
+    <input type="email" id="email" placeholder="Email" formControlName="email" class="form-control">
+    <div *ngIf="requestForm?.get('email')?.invalid && requestForm?.get('email')?.touched" class="text-danger">Valid email is required.</div>
+  </div>
+
+  <div class="form-group">
+    <input type="tel" id="phone" placeholder="Phone" formControlName="phone" class="form-control">
+    <div *ngIf="requestForm?.get('phone')?.invalid && requestForm?.get('phone')?.touched" class="text-danger">Phone number is required.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="campus">What campus are you interested in?</label>
+    <select id="campus" formControlName="campus" class="form-control">
+      <option value="">Select a campus</option>
+      <option value="campus1">Campus 1</option>
+      <option value="campus2">Campus 2</option>
+      <option value="campus3">Campus 3</option>
+    </select>
+    <div *ngIf="requestForm?.get('campus')?.invalid && requestForm?.get('campus')?.touched" class="text-danger">Campus selection is required.</div>
+  </div>
+
+  <div class="form-group">
+    <label for="workshop">Which workshop would you like to learn more about?</label>
+    <textarea id="workshop" formControlName="workshop" class="form-control"></textarea>
+  </div>
+  <p>By submitting to your information below, you agree to our <span style="color: #f5a12c;">Terms of Use</span> and <span style="color: #f5a12c;">Privacy Policy</span></p>
+
+
+  <button type="submit" [disabled]="requestForm.invalid" class="btn btn-primary">Request Info</button>
+</form>

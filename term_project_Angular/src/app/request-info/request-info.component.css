@@ -1,0 +1,68 @@
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .text-danger {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .btn-primary {
+    font-size: 20px;
+    background-color: #f5a12c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block; /* Add this line to make the button a block-level element */
+    margin: 0 auto; /* Add this line to center the button horizontally */
+  }
+  
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  form {
+    color: gray;
+    background-color: #f2f2f2;
+    max-width: 350px;
+    margin: 0 auto;
+    padding:25px;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+ p {
+    font-size: small;
+    margin-top: -6px;
+ }

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+p {
+    font-size: larger;
+    color: #555;
+    margin-bottom: 10px;
+}
+.email {
+    font-weight: bold;
+}
+
