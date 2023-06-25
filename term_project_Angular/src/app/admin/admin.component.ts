@@ -27,39 +27,20 @@ export class AdminComponent implements OnInit {
       }
     );
   }
-
-  // updateCompleteStatus(requestId: string, isComplete: boolean) {
-    
-  //   const updateData = { isComplete: isComplete };
-  
-  //   this.apiService.updateRequestInfoForm(requestId, updateData).subscribe(
-  //     (response: any) => {
-  //       console.log('Complete status updated successfully');
-  //       // Handle the response if needed
-  //     },
-  //     (error: any) => {
-  //       console.log('Error updating complete status:', error);
-  //       // Handle the error appropriately
-  //     }
-  //   );
-  // }
   
   updateRequest(requestId: string, isComplete: boolean) {
-    console.log(`Init value of isComplete bool: ${isComplete}`)
     isComplete = !isComplete
-    console.log(`${requestId} isComplete value: ` + isComplete);
-    this.counter++;
-    console.log(this.counter);
     this.apiService.updateRequestInfoForm(requestId, isComplete).subscribe(
       () => {
         console.log('RequestInfoForm updated successfully');
-        // Perform any additional actions after successful update
+        this.getRequestInfoForms()
       },
       (error) => {
         console.error('Failed to update RequestInfoForm:', error);
         // Handle error scenario
       }
     );
+    
   }
   
 

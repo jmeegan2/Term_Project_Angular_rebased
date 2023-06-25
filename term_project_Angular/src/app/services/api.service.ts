@@ -25,13 +25,8 @@ export class ApiService {
   }
 
   updateRequestInfoForm(requestId: string, isComplete: boolean) {
-   
-    console.log("updateRequestInfoForm called api.service.ts")
     const url = `http://localhost:3001/api/requestInfoForm/${requestId}`;
     const body = { isComplete };
-    console.log('URL:', url);
-    console.log('Body:', body);
-    console.log((this.http.put(url, body)))
     return this.http.put(url, body);
   }
 
