@@ -31,10 +31,14 @@ export class RequestInfoComponent {
     if (this.requestForm.valid) {
       const formData = this.requestForm.value;
       formData.isComplete = false; // Set the default value of isComplete to false
+  
+      // Add the current date and time to the formData object
+      formData.submissionDateTime = new Date();
+  
       this.apiService.submitForm(formData).subscribe(
         (response: any) => {
           console.log('Form submitted successfully');
-    
+  
           const email = formData.email;
   
           // Navigate to the 'confirmation' page with the email parameter
@@ -51,6 +55,7 @@ export class RequestInfoComponent {
       this.markFormGroupTouched(this.requestForm);
     }
   }
+  
 
 
 

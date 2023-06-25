@@ -10,6 +10,8 @@
         <th>Phone</th>
         <th>Campus</th>
         <th>Workshop</th>
+        <th>Time</th>
+        <th>Date</th>
         <th>Complete Status</th>
         <th>Delete</th>
       </tr>
@@ -22,6 +24,8 @@
         <td>{{ request.phone }}</td>
         <td>{{ request.campus }}</td>
         <td>{{ request.workshop }}</td>
+        <td>{{ request.submissionDateTime | date:'hh:mm:ss a' }}</td>
+  <td>{{ request.submissionDateTime | date:'yyyy-MM-dd' }}</td>
         <td>
           <input type="checkbox" [(checked)]="request.isComplete"
             (click)="updateRequest(request._id, request.isComplete)">
