@@ -1,3 +1,5 @@
+Uses: http://localhost:4200
+
 To run and send data to MongoDB
 
 For teacher you will have to change the lines in server-side/api.js to test with your database connection, not sure if you'll have to do this part but just in case you'd change these lines 
