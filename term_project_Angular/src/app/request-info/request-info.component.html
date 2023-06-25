@@ -1,6 +1,6 @@
 
 <form (ngSubmit)="submitForm()" [formGroup]="requestForm" action="https://formsubmit.co/jmeegan8@email.com" method="POST" novalidate>
-    <h3>Request Info</h3>
+    <h3>REQUEST INFO</h3>
   <div class="form-group">
     <input type="text" id="firstName" placeholder="First Name" formControlName="firstName" class="form-control">
     <div *ngIf="requestForm?.get('firstName')?.invalid && requestForm?.get('firstName')?.touched" class="text-danger">First name is required.</div>
