@@ -25,9 +25,13 @@
     <label for="campus">What campus are you interested in?</label>
     <select id="campus" formControlName="campus" class="form-control">
       <option value="">Select a campus</option>
-      <option value="campus1">Campus 1</option>
-      <option value="campus2">Campus 2</option>
-      <option value="campus3">Campus 3</option>
+      <option value="Towson University">Towson University</option>
+      <option value="University of Maryland, College Park">University of Maryland, College Park</option>
+      <option value="Johns Hopkins University">Johns Hopkins University</option>
+      <option value="University of Maryland, Baltimore County">University of Maryland, Baltimore County</option>
+      <option value="Loyola University Maryland">Loyola University Maryland</option>
+      <option value="Salisbury University">Salisbury University</option>
+      <option value="Goucher College">Goucher College</option>
     </select>
     <div *ngIf="requestForm?.get('campus')?.invalid && requestForm?.get('campus')?.touched" class="text-danger">Campus selection is required.</div>
   </div>
@@ -39,5 +43,5 @@
   <p>By submitting to your information below, you agree to our <span style="color: #f5a12c;">Terms of Use</span> and <span style="color: #f5a12c;">Privacy Policy</span></p>
 
 
-  <button type="submit" [disabled]="requestForm.invalid" class="btn btn-primary">Request Info</button>
+  <button type="submit" class="btn btn-primary">Request Info</button>
 </form>

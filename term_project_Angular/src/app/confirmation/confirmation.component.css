@@ -3,17 +3,31 @@ body {
     text-align: center;
     margin: 0;
     padding: 20px;
-}
-h1 {
+    color: #ffa265;
+    background-color: #fffff8;
+    height: 100vh;
+  }
+  
+  h1 {
     color: #333;
     margin-bottom: 20px;
-}
-p {
+  }
+  
+  p {
     font-size: larger;
     color: #555;
     margin-bottom: 10px;
-}
-.email {
+  }
+  
+  .email {
     font-weight: bold;
-}
+  }
+
+  .confirmation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
