@@ -62,3 +62,7 @@ body {
 .delete-button:hover {
   background-color: #a14216;
 }
+
+td {
+  font-size: 16px;
+}
