@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ConfirmationComponent } from './confirmation/confirmation.component';
-import { AdminComponent } from './admin/admin.component';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   { path: 'confirmation/:email', component: ConfirmationComponent },
